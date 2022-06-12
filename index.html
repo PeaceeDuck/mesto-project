@@ -9,129 +9,85 @@
   </head>
   <body class="page">
     <header class="header">
-      <img src="./images/logo.svg" alt="Логотип" />
+      <img src="./images/logo.svg" alt="Логотип" class="logo" />
     </header>
     <main>
       <section class="profile">
         <div class="profile__info">
           <div class="profile__photo-container">
-            <img
-              src="./images/profile__photo.jpg"
-              alt="Фото профиля"
-              class="profile__photo"
-            />
+            <img src="./images/profile__photo.jpg" alt="Фото профиля" class="profile__photo" />
           </div>
           <div class="profile__text-container">
             <h1 class="profile__name">Жак-Ив Кусто</h1>
-            <button class="profile__edit-button"></button>
+            <button class="profile__edit-button" type="button" aria-label="Редактировать профиль"></button>
             <p class="profile__status">Исследователь океана</p>
           </div>
         </div>
-        <button
-          class="profile__add-button profile__add-button_state_hover"
-        ></button>
+        <button class="profile__add-button" type="button" aria-label="Добавить публикацию"></button>
       </section>
       <section class="elements">
         <div class="element">
-          <img
-            src="./images/photos/photo-karachaevsk.jpg"
-            alt="Карачаевск"
-            class="element__photo"
-          />
+          <img src="./images/photos/photo-karachaevsk.jpg" alt="Карачаевск" class="element__photo" />
           <div class="element__info">
             <h2 class="element__title">Карачаевск</h2>
-            <button class="element__like-button"></button>
+            <button class="element__like-button" type="button" aria-label="Нравится"></button>
           </div>
         </div>
-        <div class="element">
-          <img
-            src="./images/photos/photo-elbrus.jpg"
-            alt="Гора Эльбрус"
-            class="element__photo"
-          />
+        <article class="element">
+          <img src="./images/photos/photo-elbrus.jpg" alt="Гора Эльбрус" class="element__photo" />
           <div class="element__info">
             <h2 class="element__title">Гора Эльбрус</h2>
-            <button class="element__like-button"></button>
+            <button class="element__like-button" type="button" aria-label="Нравится"></button>
           </div>
-        </div>
-        <div class="element">
-          <img
-            src="./images/photos/photo-dombai.jpg"
-            alt="Домбай"
-            class="element__photo"
-          />
+        </article>
+        <article class="element">
+          <img src="./images/photos/photo-dombai.jpg" alt="Домбай" class="element__photo" />
           <div class="element__info">
             <h2 class="element__title">Домбай</h2>
-            <button class="element__like-button"></button>
+            <button class="element__like-button" type="button" aria-label="Нравится"></button>
           </div>
-        </div>
-        <div class="element">
-          <img
-            src="./images/photos/photo-elbrus.jpg"
-            alt="Гора Эльбрус"
-            class="element__photo"
-          />
+        </article>
+        <article class="element">
+          <img src="./images/photos/photo-elbrus.jpg" alt="Гора Эльбрус" class="element__photo" />
           <div class="element__info">
             <h2 class="element__title">Гора Эльбрус</h2>
-            <button class="element__like-button"></button>
+            <button class="element__like-button" type="button" aria-label="Нравится"></button>
           </div>
-        </div>
-        <div class="element">
-          <img
-            src="./images/photos/photo-dombai.jpg"
-            alt="Домбай"
-            class="element__photo"
-          />
+        </article>
+        <article class="element">
+          <img src="./images/photos/photo-dombai.jpg" alt="Домбай" class="element__photo" />
           <div class="element__info">
             <h2 class="element__title">Домбай</h2>
-            <button class="element__like-button"></button>
+            <button class="element__like-button" type="button" aria-label="Нравится"></button>
           </div>
-        </div>
-        <div class="element">
-          <img
-            src="./images/photos/photo-karachaevsk.jpg"
-            alt="Карачаево-Черкесия"
-            class="element__photo"
-          />
+        </article>
+        <article class="element">
+          <img src="./images/photos/photo-karachaevsk.jpg" alt="Карачаево-Черкесия" class="element__photo" />
           <div class="element__info">
             <h2 class="element__title">Карачаево-Черкесия</h2>
-            <button class="element__like-button"></button>
+            <button class="element__like-button" type="button" aria-label="Нравится"></button>
           </div>
-        </div>
+        </article>
       </section>
+      <footer class="footer">
+        <p class="footer__copyright">&copy; 2022 Влад Ваганов</p>
+      </footer>
       <!--Открытая форма-->
       <div class="popup popup_opened">
-        <!--Свернутая форма-->
-        <!--<div class="popup">-->
-        <button type="reset" class="popup__close-button"></button>
-        <div class="popup_container">
+      <!--Свернутая форма-->
+      <!--<div class="popup">-->
+        <div class="popup__container">
+          <button class="popup__close-button" type="button" aria-label="Закрыть форму"></button>
           <form class="form" name="info">
             <h3 class="form__title">Редактировать профиль</h3>
             <fieldset class="form__fieldset">
-              <input
-                class="form__input"
-                type="text"
-                id="form-name"
-                placeholder="Имя"
-                name="name"
-                value="Жак-Ив Кусто"
-              />
-              <input
-                class="form__input"
-                type="text"
-                id="form-status"
-                placeholder="Статус"
-                name="about"
-                value="Исследователь океана"
-              />
-              <button class="form__save-button">Сохранить</button>
+              <input class="form__input" type="text" id="form-name" placeholder="Имя" name="name" value="Жак-Ив Кусто" />
+              <input class="form__input" type="text" id="form-status" placeholder="Статус" name="about" value="Исследователь океана" />
+              <button class="form__save-button" type="submit">Сохранить</button>
             </fieldset>
           </form>
         </div>
       </div>
-      <footer class="footer">
-        <p class="footer__copyright">&copy; 2022 Влад Ваганов</p>
-      </footer>
     </main>
   </body>
 </html>
