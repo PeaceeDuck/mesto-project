@@ -11,7 +11,7 @@
 - CSS animation
 - Positioning
 - BEM Methodology (Nested BEM)
-- Grid Layoout
+- Grid Layout
 - Form
 ## Инструкция по установке:
 ```
@@ -39,7 +39,7 @@ A one-page site developed in compliance with the Nested BEM methodology, as well
 - CSS animation
 - Positioning
 - BEM Methodology (Nested BEM)
-- Grid Layoout
+- Grid Layout
 - Form
 ## Installation instructions :
 ```
