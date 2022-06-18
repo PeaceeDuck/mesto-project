@@ -1,4 +1,4 @@
-.element__like-button {
+.item__like-button {
   width: 32px;
   height: 19px;
   background-image: url("../../../images/ui/like-button.svg");
@@ -13,10 +13,10 @@
   cursor: pointer;
 }
 
-.element__like-button:hover {
+.item__like-button:hover {
   opacity: 0.5;
 }
 
-.element__like-button:focus {
+.item__like-button:focus {
   background-image: url("../../../images/ui/like-button_active.svg");
 }

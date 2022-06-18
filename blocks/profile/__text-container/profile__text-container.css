@@ -12,7 +12,7 @@
   }
 }
 
-@media screen and (max-width: 781px) {
+@media screen and (max-width: 650px) {
   .profile__text-container {
     justify-content: center;
   }
