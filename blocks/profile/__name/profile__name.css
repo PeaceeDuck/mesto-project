@@ -4,7 +4,6 @@
   font-size: 42px;
   line-height: 1.21;
   font-weight: 500;
-  align-self: flex-end;
 }
 
 @media screen and (max-width: 919px) {
@@ -13,8 +12,3 @@
   }
 }
 
-@media screen and (max-width: 471px) {
-  .profile__name {
-    margin-left: 27px;
-  }
-}

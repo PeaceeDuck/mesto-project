@@ -5,23 +5,17 @@
   background-image: url('../../../images/ui/edit-button.svg');
   background-repeat: no-repeat;
   background-position: center;
-  align-items: center;
   padding: 0;
   border: 1px solid #fff;
   box-sizing: border-box;
-  align-self: center;
   transition: opacity 0.3s ease;
   cursor: pointer;
+  margin-left: 18px;
+  align-self: center;
 }
 
 .profile__edit-button:hover {
   opacity: 0.6;
-}
-
-@media screen and (max-width: 919px) {
-  .profile__edit-button {
-    margin-left: 10px;
-  }
 }
 
 @media screen and (max-width: 471px) {
