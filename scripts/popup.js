@@ -1,32 +1,35 @@
-// Объявляем переменные
-let editPopup = document.querySelector('.popup-edit');
-let editButton = document.querySelector('.profile__edit-button');
-let editPopupCloseButton = editPopup.querySelector('.popup__close-button');
-let editSubmitButton = editPopup.querySelector('.form__save-button');
-
-let addPopup = document.querySelector('.popup-add');
-let addButton = document.querySelector('.profile__add-button');
-let addPopupCloseButton = addPopup.querySelector('.popup__close-button');
-let addSubmitButton = addPopup.querySelector('.form__save-button')
-
-// Функция открытия или закрытия формы
+// 1. Попап редактирования профиля
+// Переменные попапа профиля
+const editPopup = document.querySelector('.popup-edit');
+const editButton = document.querySelector('.profile__edit-button');
+const editPopupCloseButton = editPopup.querySelector('.popup__close-button');
+const editSubmitButton = editPopup.querySelector('.form__save-button');
+const profileForm = document.querySelector('.profile-form')
+let nameInput = editPopup.querySelector('.name__input');
+let statusInput = editPopup.querySelector('.status__input');
+let nameProfile = document.querySelector('.profile__name');
+let statusProfile = document.querySelector('.profile__status');
+// Функция открытия/закрытия попапа профиля
 function openOrCloseEditPopup() {
-    editPopup.classList.toggle('popup_opened')
+    editPopup.classList.toggle('popup_opened');
 }
-
-// Открытие формы редактирования профиля
-editButton.addEventListener('click', openOrCloseEditPopup)
-
-// Закрытие формы редактирования профиля
-editPopupCloseButton.addEventListener('click', openOrCloseEditPopup)
-
-// Функция открытия или закрытия формы
-function openOrCloseAddPopup() {
-    addPopup.classList.toggle('popup_opened')
+// Функция заполнения инпутов информацией из карточки
+function editInputFill() {
+    nameInput.value = nameProfile.textContent;
+    statusInput.value = statusProfile.textContent;
 }
+// Функция сохранения введенной в попап профиля информации
+function formSubmitHandler(evt) {
+    evt.preventDefault();
+    nameProfile.textContent = nameInput.value;
+    statusProfile.textContent = statusInput.value;
+}
+// Слушатели событий
+editButton.addEventListener('click', openOrCloseEditPopup);
+editButton.addEventListener('click', editInputFill);
+editPopupCloseButton.addEventListener('click', openOrCloseEditPopup);
+profileForm.addEventListener('submit', formSubmitHandler);
+editSubmitButton.addEventListener('click', openOrCloseEditPopup)
 
-//Открытие формы добавления фотографии
-addButton.addEventListener('click', openOrCloseAddPopup)
 
-// Закрытие формы добавления фотографии
-addPopupCloseButton.addEventListener('click', openOrCloseAddPopup)
+
