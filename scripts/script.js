@@ -63,6 +63,7 @@ const initialCardsLength = initialCards.length;
 const itemSection = document.querySelector('.items');
  for (let i = 0; i < initialCardsLength; i++) {
     itemSection.insertAdjacentHTML('afterbegin', `<article class="item">
+      <button aria-label="Удалить" class="item__trash-button" type="button"></button>
       <img alt="${initialCards[i].name}" class="item__photo" src="${initialCards[i].link}"/>
       <div class="item__info">
         <h2 class="item__title">${initialCards[i].name}</h2>
