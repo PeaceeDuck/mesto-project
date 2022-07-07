@@ -2,6 +2,7 @@
   font-size: 12px;
   line-height: 1.2;
   color: #fff;
+  max-width: 25vw;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
