@@ -45,23 +45,42 @@
       </form>
     </div>
   </div>
+  <!--Форма добавления карточки-->
   <div class="popup popup-add">
     <div class="popup__container">
       <button aria-label="Закрыть форму" class="popup__close-button" type="button"></button>
-      <form class="form" name="info">
+      <form class="form add-form" name="info">
         <h3 class="form__title">Новое место</h3>
         <fieldset class="form__fieldset">
-          <input class="form__input" id="addform-name" name="name" placeholder="Название" type="text"
-                 value=""/>
-          <input class="form__input" id="addform-status" name="about" placeholder="Сссылка на картинку" type="text"
-                 value=""/>
+          <input class="form__input card-name__input" id="addform-name" name="name" placeholder="Название" type="text" value=""/>
+          <input class="form__input card-link__input" id="addform-status" name="about" placeholder="Сссылка на картинку" type="text" value=""/>
           <button class="form__save-button" type="submit">Создать
           </button>
         </fieldset>
       </form>
     </div>
   </div>
+  <!--Попап с картинкой-->
+  <div class="popup popup-image popup_type_image">
+    <div class="popup__container">
+      <button aria-label="Закрыть форму" class="popup__close-button" type="button"></button>
+      <figure class="fullsize-figure">
+        <img src="" alt="" class="fullsize-figure__image"/>
+        <figcaption class="fullsize-figure__caption">подпись</figcaption>
+      </figure>
+    </div>
+  </div>
 </main>
+<template id="item">
+  <article class="item">
+    <button aria-label="Удалить" class="item__trash-button" type="button"></button>
+    <img alt="" class="item__photo" src=""/>
+    <div class="item__info">
+      <h2 class="item__title"></h2>
+      <button aria-label="Нравится" class="item__like-button" type="button"></button>
+    </div>
+  </article>
+</template>
 <script src="./scripts/script.js"></script>
 </body>
 </html>

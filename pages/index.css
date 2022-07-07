@@ -25,18 +25,24 @@
 @import url('../blocks/item/__info/item__info.css');
 @import url('../blocks/item/__title/item__title.css');
 @import url('../blocks/item/__like-button/item__like-button.css');
+@import url('../blocks/item/__like-button/_active/item__like-button_active.css');
 @import url('../blocks/item/__trash-button/item__trash-button.css');
 /*Блок popup*/
 @import url('../blocks/popup/popup.css');
 @import url('../blocks/popup/_opened/popup_opened.css');
 @import url('../blocks/popup/__close-button/popup__close-button.css');
 @import url('../blocks/popup/__container/popup__container.css');
+@import url('../blocks/popup/_type/popup_type_image.css');
 /*Блок формы*/
 @import url('../blocks/form/form.css');
 @import url('../blocks/form/__title/form__title.css');
 @import url('../blocks/form/__fieldset/form__fieldset.css');
 @import url('../blocks/form/__input/form__input.css');
 @import url('../blocks/form/__save-button/form__save-button.css');
+/*Блок попапа картинки*/
+@import url('../blocks/fullsize-figure/fullsize-figure.css');
+@import url('../blocks/fullsize-figure/__caption/fullsize-figure__caption.css');
+@import url('../blocks/fullsize-figure/__image/fullsize-figure__image.css');
 /*Блок footer*/
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/footer/__copyright/footer__copyright.css');
